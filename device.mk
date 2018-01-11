@@ -45,6 +45,12 @@ TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
 $(call inherit-product, device/google/wahoo/utils.mk)
 
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+    LOCAL_KERNEL := device/google/wahoo-kernel/Image.lz4-dtb
+else
+    LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
 PRODUCT_CHARACTERISTICS := nosdcard
 PRODUCT_SHIPPING_API_LEVEL := 26
 PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
@@ -52,6 +58,7 @@ PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel \
     $(LOCAL_PATH)/init.recovery.hardware.rc:root/init.recovery.$(PRODUCT_HARDWARE).rc \
     $(LOCAL_PATH)/init.hardware.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.$(PRODUCT_HARDWARE).rc \
     $(LOCAL_PATH)/init.hardware.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.wahoo.usb.rc \

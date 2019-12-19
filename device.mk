@@ -188,7 +188,8 @@ PRODUCT_PACKAGES += \
 
 # health HAL
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-service.wahoo
+    android.hardware.health@2.1-impl-wahoo \
+    android.hardware.health@2.1-service
 
 # Permissions
 # NOTE: Used to deal with permission issues caused by Gapps updates

@@ -1,2 +1,4 @@
 libadsprpc.so
 lib_aion_buffer.so
+libprotobuf-cpp-full.so
+libprotobuf-cpp-lite.so

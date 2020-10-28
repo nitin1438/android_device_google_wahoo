@@ -900,5 +900,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Enable zygote critical window.
+PRODUCT_PROPERTY_OVERRIDES += \
+    zygote.critical_window.minute=10
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/google/wahoo/wahoo-vendor.mk)

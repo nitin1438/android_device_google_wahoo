@@ -415,6 +415,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ViMusic
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 PRODUCT_PACKAGES += \
     SecureElement
 

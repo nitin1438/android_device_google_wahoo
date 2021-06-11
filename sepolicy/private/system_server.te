@@ -1,1 +1,4 @@
 binder_call(system_server, folio_daemon)
+
+# App Lock
+add_service(system_server, applock_service);

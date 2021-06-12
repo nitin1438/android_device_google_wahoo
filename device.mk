@@ -50,8 +50,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.svn=52
 
 # Enforce privapp-permissions whitelist
-PRODUCT_PROPERTY_OVERRIDES += \
+#PRODUCT_PROPERTY_OVERRIDES += \
     ro.control_privapp_permissions=enforce
+
+# Privapp-permissions whitelist
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.control_privapp_permissions=log
 
 PRODUCT_PACKAGES += \
     messaging

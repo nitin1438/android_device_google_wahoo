@@ -15,6 +15,7 @@ TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/google/wahoo
 TARGET_NEEDS_DTBOIMAGE := true
+TARGET_KERNEL_CONFIG := lineageos_taimen_defconfig
 
 # Manifests
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += device/google/wahoo/lineage_compatibility_matrix.xml

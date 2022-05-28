@@ -597,8 +597,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor \
-    netutils-wrapper-1.0
+    android.system.net.netd@1.1.vendor
 
 # Keymaster HAL
 PRODUCT_PACKAGES += \

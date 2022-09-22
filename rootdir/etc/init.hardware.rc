@@ -333,6 +333,13 @@ on zygote-start
     # b/62837579 elabel directory
     mkdir /data/misc/elabel 0700 system system
 
+    # copy prebuilt qcril.db files always
+    copy /vendor/radio/qcril_database/qcril.db /data/vendor/radio/qcril_prebuilt.db
+    chown radio radio /data/vendor/radio/qcril_prebuilt.db
+    chmod 0660 /data/vendor/radio/qcril_prebuilt.db
+
+    start vendor.qcrild
+
 on early-boot
     # wait for devices
     wait_for_prop sys.qcom.devup 1

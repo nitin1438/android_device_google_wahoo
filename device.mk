@@ -262,15 +262,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.always_send_plmn=false\
     persist.rcs.supported=1
 
-# Radio Hal
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.1.vendor \
-    android.hardware.radio.config@1.0 \
-    librmnetctl \
-    libxml2
-
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
+    vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 
 # Native video calling
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -827,6 +820,35 @@ PRODUCT_PACKAGES += \
     PresencePolling \
     RcsService
 
+# QTI
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect.vendor
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor
+
+PRODUCT_PACKAGES += \
+    libcnefeatureconfig \
+    librmnetctl \
+    libxml2
+
+# Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # Build necessary packages for system
 PRODUCT_PACKAGES += \
     libhidltransport \
@@ -868,10 +890,6 @@ VENDOR_SECURITY_PATCH := 2020-10-05
 # Now Playing
 PRODUCT_PACKAGES += \
     NowPlayingOverlay
-
-# Shims
-PRODUCT_PACKAGES += \
-    lib-imsvtshim
 
 # Protobuf
 PRODUCT_PACKAGES += \

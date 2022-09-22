@@ -38,7 +38,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/google/camera \
     hardware/google/camera \
     hardware/google/pixel \
-    hardware/google/interfaces
+    hardware/google/interfaces \
+    vendor/qcom/opensource/dataservices
     
 PRODUCT_COPY_FILES += \
     device/google/wahoo/configs/default-permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/default-permissions.xml \

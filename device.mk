@@ -871,3 +871,6 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     lib-imsvtshim
+
+# Inherit the proprietary files
+$(call inherit-product, vendor/google/wahoo/wahoo-vendor.mk)

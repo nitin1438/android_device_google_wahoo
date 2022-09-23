@@ -11,7 +11,9 @@ allow radio vendor_framework_file:dir search;
 hwbinder_use(radio)
 allow radio vnd_ims_radio_hwservice:hwservice_manager find;
 allow radio vnd_qcrilhook_hwservice:hwservice_manager find;
+allow radio hal_datafactory_hwservice:hwservice_manager find;
 allow radio hal_imsrtp_hwservice:hwservice_manager find;
+allow radio hal_imsrcsd_hwservice:hwservice_manager find;
 
 allow radio {
   mediaextractor_service

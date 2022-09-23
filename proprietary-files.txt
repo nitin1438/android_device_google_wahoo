@@ -685,9 +685,6 @@ vendor/etc/perf-profile0.conf
 vendor/lib/libqti-perfd-client.so
 vendor/lib64/libqti-perfd-client.so
 
-# Public Libraries
-vendor/etc/public.libraries.txt
-
 # OEMLock
 vendor/bin/oemlock-bridge
 vendor/bin/oemlock-bridge-client

@@ -872,5 +872,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     lib-imsvtshim
 
+# Public Libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/google/wahoo/wahoo-vendor.mk)

@@ -23,7 +23,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/camera \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/qcom/msm8998
+    hardware/qcom/msm8998 \
+    hardware/qcom/wlan/legacy
 
 PRODUCT_COPY_FILES += \
     device/google/wahoo/default-permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/default-permissions.xml \

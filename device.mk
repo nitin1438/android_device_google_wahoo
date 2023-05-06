@@ -699,7 +699,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Privileged permissions whitelist
 PRODUCT_COPY_FILES += \
-    device/google/wahoo/permissions/privapp-permissions-aosp_wahoo.xml:system/etc/permissions/privapp-permissions-aosp_wahoo.xml
+    device/google/wahoo/permissions/privapp-permissions-aosp_wahoo.xml:system/etc/permissions/privapp-permissions-aosp_wahoo.xml \
+    device/google/wahoo/permissions/pixel_permissions_product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/pixel_permissions_product.xml \
+    device/google/wahoo/permissions/pixel_permissions_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/pixel_permissions_system_ext.xml
 
 PRODUCT_PACKAGES += \
     ipacm

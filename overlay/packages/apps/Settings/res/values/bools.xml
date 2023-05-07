@@ -20,4 +20,8 @@
 
     <!-- Whether to show Camera laser sensor switch in Developer Options -->
     <bool name="config_show_camera_laser_sensor">true</bool>
+
+    <!-- Maintainer info. -->  
+    <string name="bliss_maintainer">Nitin1438</string>    
+
 </resources>

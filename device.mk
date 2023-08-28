@@ -820,7 +820,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 include hardware/google/pixel/vibrator/drv2624/device.mk
 include hardware/google/pixel/mm/device_legacy.mk
-include hardware/google/pixel/thermal/device.mk
+include device/google/gs-common/thermal/thermal_hal/device.mk
 
 # power HAL
 -include hardware/google/pixel/power-libperfmgr/aidl/device.mk

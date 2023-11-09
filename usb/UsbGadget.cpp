@@ -574,9 +574,9 @@ V1_0::Status UsbGadget::setupFunctions(
 
   if (addEpollFd(epollFd, eventFd) == -1) return Status::ERROR;
 
-  mEpollFd = move(epollFd);
-  mInotifyFd = move(inotifyFd);
-  mEventFd = move(eventFd);
+  mEpollFd = std::move(epollFd);
+  mInotifyFd = std::move(inotifyFd);
+  mEventFd = std::move(eventFd);
   gadgetPullup = false;
 
   // Monitors the ffs paths to pull up the gadget when descriptors are written.

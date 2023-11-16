@@ -2,5 +2,11 @@
    {
      "repository": "kernel_google_wahoo",
      "target_path": "kernel/google/wahoo"
+   },
+   {
+     "repository":"asriadirahim/packages_apps_googlecamera",
+     "target_path":"packages/apps/GoogleCamera",
+     "remote":"gitlab",
+     "branch":"thirteen"
    }
 ]

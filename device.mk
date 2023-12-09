@@ -220,6 +220,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # graphics
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.enable_frame_rate_override=false \
     ro.hardware.egl=adreno \
     ro.opengles.version=196610
 

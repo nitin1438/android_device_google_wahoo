@@ -220,6 +220,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196610
 
+# AutoSingleLayer
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.auto_latch_unsignaled=true
+
 # b/73640835
 PRODUCT_PROPERTY_OVERRIDES += \
     sdm.debug.rotator_downscale=1

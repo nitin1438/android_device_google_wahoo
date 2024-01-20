@@ -4,3 +4,4 @@ type vnd_atcmdfwd_hwservice, hwservice_manager_type, vendor_hwservice_type;
 type hal_imsrtp_hwservice, hwservice_manager_type, vendor_hwservice_type;
 type nxpnfc_hwservice, hwservice_manager_type, vendor_hwservice_type;
 type nxpese_hwservice, hwservice_manager_type, vendor_hwservice_type;
+type hal_dms_hwservice, hwservice_manager_type;

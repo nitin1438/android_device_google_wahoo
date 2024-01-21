@@ -527,6 +527,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.dolby.dax.version=DAX3_3.6.0.12_r1 \
     ro.vendor.audio.dolby.dax.support=true
 
+# Clone apps exemption
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/sysconfig/preinstalled-packages-platform-pixel-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-pixel-product.xml
+
 # Audio effects
 PRODUCT_PACKAGES += \
     libvolumelistener \

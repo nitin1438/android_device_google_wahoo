@@ -451,6 +451,9 @@ service vendor.thermal-engine /vendor/bin/thermal-engine -c ${vendor.qcom.therma
    socket thermal-recv-client stream 0660 system system
    socket thermal-recv-passive-client stream 0666 system system
 
+on property:init.svc.vendor.qcrild=running
+    restart vendor.radio-config-hal-1-1.wrapper
+
 service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqbalance.conf
     socket msm_irqbalance seqpacket 660 root system
     class core

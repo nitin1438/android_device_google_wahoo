@@ -6,3 +6,4 @@ type nxpnfc_hwservice, hwservice_manager_type, vendor_hwservice_type;
 type nxpese_hwservice, hwservice_manager_type, vendor_hwservice_type;
 type hal_dms_hwservice, hwservice_manager_type;
 type hal_datafactory_hwservice, hwservice_manager_type;
+type vendor_hal_radio_oldcfg_hwservice, hwservice_manager_type;

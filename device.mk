@@ -818,6 +818,41 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.opa.eligible_device=true
 
+# QTI
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect.vendor
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor
+
+PRODUCT_PACKAGES += \
+    libcnefeatureconfig \
+    librmnetctl \
+    libxml2
+
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.1-service.wrapper.xiaomi_msm8998 \
+    android.hardware.radio.c_shim@1.0.so \
+    android.hardware.radio.c_shim@1.1.so \
+    android.hardware.radio.c_shim@1.2.so
+
+# Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # Build necessary packages for vendor
 PRODUCT_PACKAGES += \
     android.hidl.safe_union@1.0.vendor \

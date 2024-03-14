@@ -285,3 +285,6 @@
 # Dolby
 /data/vendor/dolby(/.*)?                                                               u:object_r:vendor_data_file:s0
 /(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service               u:object_r:hal_dms_default_exec:s0
+
+# RIL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.radio\.config@1\.1-service\.wrapper\.xiaomi_msm8998 u:object_r:hal_radio_config_default_exec:s0

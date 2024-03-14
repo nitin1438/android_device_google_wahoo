@@ -27,6 +27,8 @@ dontaudit rild diag_device:chr_file rw_file_perms;
 
 binder_call(rild, qtidataservices_app)
 
+add_hwservice(rild, vendor_hal_radio_oldcfg_hwservice)
+
 allow rild radio_vendor_data_file:dir rw_dir_perms;
 allow rild radio_vendor_data_file:file create_file_perms;
 allow rild radio_vendor_data_file:file lock;

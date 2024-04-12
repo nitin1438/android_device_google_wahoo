@@ -198,13 +198,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.control_privapp_permissions?=enforce
 
-# Radio Hal
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.1.vendor \
-    android.hardware.radio.config@1.0 \
-    android.hardware.radio.config@1.0-service \
-    libxml2
-
 # Audio fluence, ns, aec property, voice and media volume steps
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.audio.fluencetype=fluencepro \
@@ -266,7 +259,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.telephony.block_binder_thread_on_incoming_calls=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.rild.libpath=/vendor/lib64/libril-qc-qmi-1.so
+    vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 
 # Disable snapshot timer
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -396,9 +389,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # DRM HAL
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
-    android.hardware.drm-service.clearkey \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
+    android.hardware.drm-service.clearkey
 
 # NFC packages
 PRODUCT_PACKAGES += \
@@ -504,8 +495,11 @@ endif
 
 # Protobuf
 PRODUCT_PACKAGES += \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
-
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
+    
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
@@ -816,6 +810,35 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Enable OPA features
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.opa.eligible_device=true
+
+# QTI
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect.vendor
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor
+
+PRODUCT_PACKAGES += \
+    libcnefeatureconfig \
+    librmnetctl \
+    libxml2
+
+# Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # Build necessary packages for vendor
 PRODUCT_PACKAGES += \

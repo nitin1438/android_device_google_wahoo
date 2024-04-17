@@ -500,6 +500,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ConnectivityOverlay
 
+# fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.fastbootd.available=true
+
 # Audio effects
 PRODUCT_PACKAGES += \
     libvolumelistener \

@@ -752,10 +752,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.gcam.fd.ensemble=1
 
-# Preopt SystemUI
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUIGoogle
-
 # audio effects config
 PRODUCT_PROPERTY_OVERRIDES += \
     fmas.hdph_sgain=0

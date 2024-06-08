@@ -8,5 +8,11 @@
      "target_path":"packages/apps/GoogleCamera",
      "remote":"gitlab",
      "branch":"thirteen"
+   },
+   {
+     "repository":"LineageOS/android_device_google_gs-common",
+     "target_path":"device/google/gs-common",
+     "remote":"github",
+     "branch":"lineage-21"
    }
 ]

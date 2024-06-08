@@ -409,6 +409,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GcamPrebuilt
 
+# ViMusic
+PRODUCT_PACKAGES += \
+    ViMusic
+
 PRODUCT_PACKAGES += \
     SecureElement
 

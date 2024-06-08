@@ -14,5 +14,11 @@
      "target_path":"device/google/gs-common",
      "remote":"github",
      "branch":"lineage-21"
+   },
+   {
+     "repository": "Google-Pixel2-2XL/packages_apps_ViMusic",
+     "target_path": "packages/apps/ViMusic",
+     "remote": "github",
+     "branch": "main"
    }
 ]

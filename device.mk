@@ -415,6 +415,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ViMusic
 
+# Elmyra
+PRODUCT_PACKAGES += \
+    ElmyraService
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore

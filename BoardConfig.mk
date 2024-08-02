@@ -181,3 +181,7 @@ BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
 
 # Allow Lineage config to override others
 -include device/google/wahoo/BoardConfigLineage.mk
+
+DEVICE_PATH := device/google/wahoo
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_wahoo

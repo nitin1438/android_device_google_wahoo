@@ -17,16 +17,5 @@
 <resources>
     <!-- Whether to show a preference item for regulatory information in About phone -->
     <bool name="config_show_regulatory_info">true</bool>
-
-    <!-- Whether to show volume steps settings -->
-    <bool name="config_supports_volume_steps" translatable="false">true</bool>
-
-    <!-- Show battery cycle count -->
-    <bool name="config_show_battery_cycle_count" translatable="false">true</bool>
-
-    <!-- Show battery Design Capacity -->
-    <bool name="config_show_battery_design_capacity">false</bool>
-
-    <!-- Show battery Maximum Capacity -->
-    <bool name="config_show_battery_maximum_capacity">false</bool>
+    
 </resources>

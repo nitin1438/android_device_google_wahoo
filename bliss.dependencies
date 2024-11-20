@@ -1,0 +1,14 @@
+[
+   {
+      "repository": "nitin1438/android_kernel_google_wahoo",
+      "target_path": "kernel/google/wahoo",
+      "remote":"github",
+      "branch":"voyager"
+   },
+   {
+      "repository":"LineageOS/android_device_google_gs-common",
+      "target_path":"device/google/gs-common",
+      "remote":"github",
+      "branch":"lineage-22.0"
+   }
+]

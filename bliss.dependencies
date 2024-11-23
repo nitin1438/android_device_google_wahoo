@@ -10,5 +10,11 @@
       "target_path":"device/google/gs-common",
       "remote":"github",
       "branch":"lineage-22.0"
+   },
+   {
+      "repository":"LineageOS/android_frameworks_opt_telephony",
+      "target_path":"frameworks/opt/telephony",
+      "remote":"github",
+      "branch":"lineage-22.0"
    }
 ]

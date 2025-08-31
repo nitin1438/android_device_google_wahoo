@@ -154,7 +154,7 @@ DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/device_framework_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/bliss/config/device_framework_matrix.xml
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Board uses A/B OTA.
